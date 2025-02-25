@@ -1,0 +1,185 @@
+:root {
+  --font-family: 'Inter', sans-serif;
+  --second-family: 'Tahoma', sans-serif;
+  --third-family: 'Bebas Neue Cyrillic', sans-serif;
+  --font3: 'Franklin Gothic Book', sans-serif;
+  --font4: 'Montserrat', sans-serif;
+  --font5: 'Instrument Serif', sans-serif;
+  --font6: 'Franklin Gothic Demi', sans-serif;
+  --font7: 'Franklin Gothic Heavy', sans-serif;
+
+  --primary-bg: #292027;
+  --primary-color: #fff;
+  --gradient: linear-gradient(90deg, #ef7614 0%, #f8ab1a 100%);
+}
+body {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  margin: 0;
+  color: var(--primary-color);
+  background-color: var(--primary-bg);
+  font-family: var(--font6);
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-family: inherit;
+  color: currentColor;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.wrapper,
+.wrapper-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.wrapper {
+  max-width: 300px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 145%;
+}
+.wrapper-main {
+  width: 300px;
+}
+.title {
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.title-accent {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+.title-fonts {
+  font-family: var(--font7);
+}
+.logo {
+  width: 90px;
+}
+.course-title {
+  font-family: var(--font7);
+  font-size: 18px;
+  padding: 20px 10px;
+  background: var(--gradient);
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-item {
+  width: 20px;
+  height: 20px;
+}
+.text-item {
+  text-align: left;
+  font-family: var(--font3);
+  font-size: 16px;
+  line-height: 102%;
+}
+.btn {
+  font-family: var(--font7);
+  background: var(--gradient);
+  font-weight: 400;
+  font-size: 20px;
+  padding: 15px 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    gap: 35px;
+    max-width: 600px;
+  }
+  .wrapper-main {
+    gap: 40px;
+    flex-direction: row;
+    justify-content: center;
+    width: 600px;
+  }
+  .logo {
+    width: 150px;
+  }
+  .wrapper-title {
+    text-align: left;
+  }
+  .title {
+    font-size: 25px;
+    line-height: 110%;
+  }
+  .title-accent {
+    font-size: 30px;
+  }
+  .title-fonts {
+    font-size: 45px;
+  }
+  .course-title {
+    padding: 15px 60px;
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .list {
+    gap: 15px;
+  }
+  .item {
+    gap: 30px;
+  }
+
+  .icon-item {
+    width: 40px;
+    height: 40px;
+  }
+
+  .text-item {
+    font-size: 25px;
+    line-height: 102%;
+  }
+
+  .btn {
+    font-size: 25px;
+    padding: 20px 15px;
+  }
+}
