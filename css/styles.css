@@ -94,7 +94,7 @@ img {
 }
 .course-title {
   font-family: var(--font7);
-  font-size: 18px;
+  font-size: 17px;
   padding: 20px 10px;
   background: var(--gradient);
 }
@@ -118,7 +118,6 @@ img {
 .text-item {
   text-align: left;
   font-family: var(--font3);
-  font-size: 16px;
   line-height: 102%;
 }
 .btn {
